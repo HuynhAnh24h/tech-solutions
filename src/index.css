@@ -135,4 +135,64 @@
   .pause-on-hover:hover {
     animation-play-state: paused;
   }
+  @keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-left {
+  animation: fade-left 0.8s ease-out forwards;
+}
+
+.fade-right {
+  animation: fade-right 0.8s ease-out forwards;
+}
+
+.fade-up {
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+.fade-down {
+  animation: fade-down 0.8s ease-out forwards;
+}
+
 }

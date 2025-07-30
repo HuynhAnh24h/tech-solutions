@@ -8,7 +8,7 @@ import bannerImage from '@/assets/banner.png'
 const BannerList = () => {
   return (
     <div className='h-[80.5vh] flex items-center gap-2 container mx-auto'>
-        <div className='flex-1 flex flex-col gap-3 items-center md:items-start'>
+        <div className='flex-1 flex flex-col gap-3 items-center md:items-start fade-left'>
             <p className='text-[70px] font-bold text-gray-800 text-center md:text-start'>Giải pháp công nghệ dành cho startup.</p>
             <p className='text-[18px] text-center md:text-start'>Với đội ngũ lập trình viên đầy kinh nghiệm chúng tôi tự 
                 tin mang đến sản phẩm tốt nhất cho khách hàng</p>
@@ -22,7 +22,7 @@ const BannerList = () => {
                 </Link>
             </div>
         </div>
-        <div className='flex-1 none hidden md:flex'>
+        <div className='flex-1 none hidden md:flex fade-right'>
             <img src={bannerImage} alt="" className='w-full h-full object-cover' />
         </div>
     </div>
